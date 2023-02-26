@@ -1,0 +1,159 @@
+.performance {
+    padding-bottom: 100px;
+}
+
+.performance-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.performance-content {
+}
+.quick {
+    display: block;
+    max-width: 133px;
+    padding: 4px 16px   ;
+    font-size: 12px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.38);
+    background: rgba(106, 106, 106, 0.12);
+    border-radius: 40px;
+}
+.performance-content-title {    
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #1D2449;
+    
+}
+.performance-content-text {
+    margin: 0;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D2449;
+    opacity: 0.6;
+}
+.performance-list {
+    max-width: 656px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    gap: 16px 52px;
+    justify-content: space-between;
+}
+
+.performance-item::before{
+    margin-right: 10px;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/check-icon.png");
+    background-size: 20px 20px;
+}
+.performance-item__m::before{
+    margin-right: 14px;
+}
+.performance-item {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D2449;
+    
+}
+.performance-btn-box {
+    display: flex;
+    align-items: center;
+}
+.performance-get-start {
+    padding: 16px 24px;
+    margin-right: 32px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #1D2449;
+    background-color: transparent;
+    border: 1px solid #1D2449;
+    border-radius: 20px;
+}
+.performance-learn-more {
+    display: flex;
+    align-items: center;    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D2449;
+}
+.performance-learn-more::after{
+    margin-left: 10px;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 12px;
+    background-image: url("../../images/arrow-right.png ");
+    background-size: 8px 12px;
+}
+.performance-laptop {
+    margin-top: 32px;
+    width: 564px;
+    height: 350px;
+}
+
+@media only screen and (max-width:1256px) {
+    .performance-list{
+        flex-direction: column;
+    }
+
+    
+}
+
+@media only screen and (max-width:920px) {
+   
+
+    .performance-laptop{
+        display: none;
+    }
+    .performance-content{
+        margin-right: 0;
+    }
+    .performance-wrapper{
+        display: block;
+       
+    }
+
+    .performance-content-title{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .performance-content-text{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .performance-list{
+        width: max-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .quick{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .performance-btn-box{
+        justify-content: center;
+    }
+
+    
+    
+}

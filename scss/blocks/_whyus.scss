@@ -1,0 +1,102 @@
+.whyus {
+    padding-bottom: 100px;
+}
+
+.whyus-title {
+    margin-bottom: 36px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #1D2449;
+}
+.whyu-list {
+    padding-left: 0;
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 56px;
+}
+.whyus-item {
+    display: flex;
+    justify-content: start;
+}
+.whyus-textbox{
+    width: 266px;
+    
+}
+.whyus-item::before{
+    margin-right: 16px;
+    content: "";
+    display: block;
+    width: 93px;
+    height: 120px;
+    background-image: url("../../images/partnrship-icon.png");
+    background-size: 93px 120px;
+    background-repeat: no-repeat;
+    
+}
+.whyus-item__title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1D2449;
+}
+.whyus-item__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1D2449;
+    opacity: 0.5;
+    
+}
+.whyus-item__logistics::before{
+    width: 100px;
+    height: 110px;
+    background-size: 100px 110px;
+    background-image: url("../../images/logistics-icon.png");
+}
+.whyus-item__dilevry::before{
+    background-image: url("../../images/dilevry-icon.png");
+}
+.whyus-item__coverage::before{
+    background-image: url("../../images/covearage-icon.png");
+}
+.whyus-item__ship::before{
+    width: 100px;
+    height: 110px;
+    background-size: 100px 110px;
+    background-image: url("../../images/ship-product-icon.png");
+}
+.whyus-item__multiple::before{
+    background-image: url("../../images/multiplay-payment-icon.png");
+}
+
+@media only screen and (max-width:640px) {
+    .whyus-item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .whyus-item::before{
+        margin: 0;  
+    }
+    .whyus-textbox{
+        align-items: center;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width:900px) {
+  .whyu-list{
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

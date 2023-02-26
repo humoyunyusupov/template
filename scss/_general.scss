@@ -22,12 +22,12 @@ img{
 }
 body{
   display: flex;
-  background-color:#EDF3F8;
+  background-color:#F9FBFF;
   flex-direction: column;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Public Sans", "Arial", sans-serif;
+  font-family: 'SF Pro Display', sans-serif;
   font-weight: 400;
 }
 a{
@@ -38,4 +38,8 @@ a{
 
 .site-main{
   flex-grow: 1;
+}
+
+.arabic{
+  font-family: "SF Pro Arabic";
 }
